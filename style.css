@@ -1,0 +1,294 @@
+/*project-display start */
+.container {
+    position: relative;
+    max-width: 110px;
+}
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+.w-container:after, .w-container:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+.w-container:after {
+    clear: both;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block
+}
+.img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+.grid-portfolio {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.collection-list {
+    grid-column-gap: 60px;
+    grid-row-gap: 60px
+}
+
+
+
+.section-portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.header-portfolio-item {
+    height: 400px;
+    
+    padding-top: 230px;
+    background-color: #eaf9ff
+}
+
+.portfolio-item-image {
+    position: relative;
+    top: -70px
+}
+
+
+
+ .container {
+        padding-right:20px;
+        padding-left: 20px
+}
+
+   
+ 
+
+.header-portfolio-item{
+    min-height:518px;
+    background: #313BAC;
+    color: #fff;
+    padding-top:150px;
+}
+.header-portfolio-item h1{
+    font-size:40px;
+    margin-bottom:50px;
+}
+.portfolio-summary{
+    display:flex;
+}
+.portfolio-summary-item{
+    margin-right:40px;
+}
+.portfolio-summary-item p{
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
+}
+.grid-portfolio-item{
+    background: #fff;
+    border: 1px solid #E9E9E9;
+    padding:26px;
+}
+.grid-portfolio-item a{
+    text-decoration:none;
+    color: #000;
+}
+.grid-portfolio-item .tag{
+    font-size: 10px;
+    line-height: 10px;
+    padding: 8px 15px;
+    background: #dccafc;
+    color: #4b0ae5;
+}
+.grid-portfolio-item h3{
+    font-size:20px;
+    height:36px;
+    overflow:hidden;
+    margin-bottom:34px;
+    margin-top:16px;
+}
+.grid-portfolio-item .grid-portfolio-summary p{
+    font-size:18px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align: center;
+}
+.grid-portfolio-item .grid-portfolio-summary p strong{
+    font-size:16px;
+    font-weight:bold;
+
+}
+.grid-portfolio-summary-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.grid-portfolio-summary{
+    flex:1;
+    
+    
+}
+.grid-portfolio-summary-btn{
+    text-align: center;
+}
+.grid-portfolio-summary:nth-child(2){
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    padding-left: 30px;
+}
+.grid-portfolio-summary:last-child{
+    padding-left: 30px;
+}
+
+.portfolio_preview_image {
+    width: 100%;
+    height: 780px;
+    top: -70px;
+    left: 0px;
+    overflow: hidden;
+    position: relative;
+    background: url('../uploads/p2/full-preview-treaty-fruity-landing-page.png');
+    z-index: 10;
+    background-position: top left;
+    box-shadow: 0px -44px 70px rgb(0 0 0 / 10%);
+    transition: all .5s;
+}
+.fullViewPreview{
+    height: auto;
+}
+.portfolio_preview_image.fullViewPreview .view_full_page{
+    display: none;
+}
+.portfolio_preview_image:before{
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, #F8F8F8 40%);
+    z-index: 999;
+    content: '';
+    bottom: -100px;
+    height: 310px;
+}
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    
+    border-radius: 5px;
+    background-color: #4352ff;
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.tag-heading{
+    font-size: 18px;
+    
+}
+.h3{
+    font-size: 20px;
+}
+
+.grid-portfolio-item-link{
+    display: block;
+}
+.portfolio-image-thumb-wrap{
+    height: 345px;
+    border:1px solid #d2d2d2;
+    width: 100%;
+    overflow: hidden;
+}
+.grid-portfolio-item .longThumb .portfolio-image-thumb{
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 1s cubic-bezier(.17,.67,.83,.67);
+}
+.grid-portfolio-item:hover .longThumb .portfolio-image-thumb{
+    transform: translate3d(0px, -85%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 7s cubic-bezier(.17,.67,.83,.67);
+}
+.grid-portfolio-item .rectangleThumb .portfolio-image-thumb{
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+.grid-portfolio-item:hover .rectangleThumb .portfolio-image-thumb{
+    transform: translate3d(0px, 0%, 0px) scale3d(1.2, 1.2, 1.2) rotateX(0deg) rotateY(0deg) rotateZ(5deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 1s cubic-bezier(.17,.67,.83,.67);
+}
+.section-description .portfolio-details{
+    max-width:780px;
+    margin:0 auto;
+}
+.section-description .portfolio-details p{
+    margin-bottom:20px;
+}
+
+@media screen and (max-width: 480px){
+
+    .grid-portfolio{
+        grid-template-columns:1fr;
+    }
+    
+}
+.project-display-1{
+    outline: none;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(119deg, rgb(214, 66, 255) 0%, rgb(98, 87, 255) 100%);
+
+    color: #ffff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 3rem;
+    width: 100;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.project-display-1:hover{
+    background: linear-gradient(236deg, rgb(170, 0, 255) 0%, rgb(0, 85, 255) 100%);
+
+   
+}
+.project-display-2{
+    background-image: linear-gradient(#FF5F6D ,#FFC371);
+    outline: none;
+    padding: 0.5rem 2rem;
+    color: #ffff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 3rem;
+    width: 100;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.project-display-2:hover{
+    background-image: linear-gradient(#FF512F ,#DD2476);
+}
+/*project-display end */
